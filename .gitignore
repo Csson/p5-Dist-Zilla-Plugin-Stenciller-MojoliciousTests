@@ -1,0 +1,7 @@
+/Dist-Zilla-Plugin-Stenciller-MojoliciousTests-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
