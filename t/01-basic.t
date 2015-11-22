@@ -10,7 +10,7 @@ use String::Cushion;
 use File::Temp 'tempdir';
 use if $ENV{'AUTHOR_TESTING'}, 'Test::Warnings';
 
-use Dist::Zilla::Plugin::Stenciller::MojoTests;
+use Dist::Zilla::Plugin::Stenciller::MojoliciousTests;
 
 ok 1;
 
@@ -18,11 +18,11 @@ ok 1;
 my $tzil = Builder->from_config(
     {   dist_root => 't/corpus' },
     {   add_files => {
-            'source/t/corpus/template.html' => path('t/corpus/template.html')->slurp_utf8,
+            'source/t/corpus/template.test' => path('t/corpus/template.test')->slurp_utf8,
             'source/t/corpus/01-test.stencil' => path('t/corpus/01-test.stencil')->slurp_utf8,
             'source/example/du.mmy' => '',
             'source/dist.ini' => simple_ini(
-                ['Stenciller::MojoTests' => {
+                ['Stenciller::MojoliciousTests' => {
                     source_directory => 't/corpus',
                     file_pattern => '.+\.stencil',
                     output_directory => 'example',

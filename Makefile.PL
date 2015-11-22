@@ -20,10 +20,17 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "MIN_PERL_VERSION" => "5.016000",
   "NAME" => "Dist::Zilla::Plugin::Stenciller::MojoliciousTests",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Dist::Zilla::File::InMemory" => 0,
+    "Stenciller" => "0.1212"
+  },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
+    "File::Temp" => 0,
+    "Path::Tiny" => 0,
+    "Test::DZil" => 0,
+    "Test::Differences" => 0,
     "Test::More" => "0.96"
   },
   "VERSION" => "0.0001",
@@ -34,8 +41,14 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Dist::Zilla::File::InMemory" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
+  "File::Temp" => 0,
+  "Path::Tiny" => 0,
+  "Stenciller" => "0.1212",
+  "Test::DZil" => 0,
+  "Test::Differences" => 0,
   "Test::More" => "0.96"
 );
 

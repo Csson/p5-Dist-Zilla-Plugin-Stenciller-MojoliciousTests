@@ -13,10 +13,23 @@ prereqs:
   runtime:
     requires:
       - perl: 5.016000
+      - Stenciller: 0.1212
+      - Dist::Zilla::File::InMemory
+  test:
+    requires:
+     - Test::DZil
+     - Test::Differences
+     - Path::Tiny
+     - File::Temp
 
 plugins:
   - +config: Author::CSSON
-  
+
+  - +extend_plugin: MetaNoIndex
+    directory:
+      - corpus
+      - t/corpus
+
   - +add_plugin: TravisYML
     +before: Git::Tag
     perl_version: 5.16 5.20

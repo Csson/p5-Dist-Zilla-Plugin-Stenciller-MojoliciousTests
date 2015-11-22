@@ -2,7 +2,7 @@
 
 Dist::Zilla::Plugin::Stenciller::MojoliciousTests - Short intro
 
-![Requires Perl unknown](https://img.shields.io/badge/perl-unknown-brightgreen.svg) [![Travis status](https://api.travis-ci.org//.svg?branch=master)](https://travis-ci.org//)
+![Requires Perl 5.16](https://img.shields.io/badge/perl-5.16-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests)
 
 # VERSION
 
