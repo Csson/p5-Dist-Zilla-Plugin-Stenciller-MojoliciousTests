@@ -25,7 +25,7 @@ prereqs:
      - syntax
      - Syntax::Feature::Qi
      - String::Cushion
-     - Mojolicious::Lite: 5.0
+     - Mojolicious: 5.00
 
 plugins:
   - +config: Author::CSSON

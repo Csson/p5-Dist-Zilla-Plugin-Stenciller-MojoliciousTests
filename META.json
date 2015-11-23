@@ -106,7 +106,7 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
             "File::Temp" : "0",
-            "Mojolicious::Lite" : "5.0",
+            "Mojolicious" : "5.00",
             "String::Cushion" : "0",
             "Syntax::Feature::Qi" : "0",
             "Test::DZil" : "0",
