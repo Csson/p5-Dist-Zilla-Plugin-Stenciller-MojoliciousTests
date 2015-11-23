@@ -25,7 +25,7 @@ my $tzil = Builder->from_config(
                 ['Stenciller::MojoliciousTests' => {
                     source_directory => 't/corpus',
                     file_pattern => '.+\.stencil',
-                    output_directory => 'example',
+                    output_directory => 't',
                     template_file => 't/corpus/template.test',
                 }],
             )
@@ -41,7 +41,7 @@ eq_or_diff $generated_test, expected_test(), 'Generated correct test';
 done_testing;
 
 sub expected_test {
-    return cushion 0, 1, qi{
+    return cushion 0, 2, qi{
         use 5.10.1;
         use strict;
         use warnings FATAL => 'all';
@@ -54,6 +54,22 @@ sub expected_test {
 
         my $test = Test::Mojo::Trim->new;
 
+
+        # test from line 2 in 01-test.stencil
+
+        my $expected_01_test_2 = qq{    <span class="badge">3</span>};
+
+        get '/01_test_2' => '01_test_2';
+
+        $test->get_ok('/01_test_2')->status_is(200)->trimmed_content_is($expected_01_test_2, 'Matched trimmed content in 01-test.stencil, line 2');
+
+        done_testing();
+
+        __DATA__
+
+        @@ 01_test_2.html.ep
+
+            <% badge '3' %>
     };
 
 }

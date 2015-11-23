@@ -1,5 +1,5 @@
 {
-   "abstract" : "Short intro",
+   "abstract" : "Create Mojolicious tests from text files parsed with Stenciller",
    "author" : [
       "Erik Carlsson <info@code301.com>"
    ],
@@ -93,8 +93,9 @@
       "runtime" : {
          "requires" : {
             "Dist::Zilla::File::InMemory" : "0",
-            "Stenciller" : "0.1212",
-            "perl" : "5.016000"
+            "Path::Tiny" : "0",
+            "Stenciller" : "0.1300",
+            "perl" : "5.014000"
          }
       },
       "test" : {
@@ -105,10 +106,14 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
             "File::Temp" : "0",
-            "Path::Tiny" : "0",
+            "Mojolicious::Lite" : "5.0",
+            "String::Cushion" : "0",
+            "Syntax::Feature::Qi" : "0",
             "Test::DZil" : "0",
             "Test::Differences" : "0",
-            "Test::More" : "0.96"
+            "Test::Mojo::Trim" : "0",
+            "Test::More" : "0.96",
+            "syntax" : "0"
          }
       }
    },

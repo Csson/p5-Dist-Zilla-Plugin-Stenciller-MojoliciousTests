@@ -3,14 +3,14 @@
 use strict;
 use warnings;
 
-use 5.016000;
+use 5.014000;
 
 use ExtUtils::MakeMaker;
 
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Short intro",
+  "ABSTRACT" => "Create Mojolicious tests from text files parsed with Stenciller",
   "AUTHOR" => "Erik Carlsson <info\@code301.com>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
@@ -18,20 +18,25 @@ my %WriteMakefileArgs = (
   "DISTNAME" => "Dist-Zilla-Plugin-Stenciller-MojoliciousTests",
   "EXE_FILES" => [],
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.016000",
+  "MIN_PERL_VERSION" => "5.014000",
   "NAME" => "Dist::Zilla::Plugin::Stenciller::MojoliciousTests",
   "PREREQ_PM" => {
     "Dist::Zilla::File::InMemory" => 0,
-    "Stenciller" => "0.1212"
+    "Path::Tiny" => 0,
+    "Stenciller" => "0.1300"
   },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
     "File::Temp" => 0,
-    "Path::Tiny" => 0,
+    "Mojolicious::Lite" => "5.0",
+    "String::Cushion" => 0,
+    "Syntax::Feature::Qi" => 0,
     "Test::DZil" => 0,
     "Test::Differences" => 0,
-    "Test::More" => "0.96"
+    "Test::Mojo::Trim" => 0,
+    "Test::More" => "0.96",
+    "syntax" => 0
   },
   "VERSION" => "0.0001",
   "test" => {
@@ -45,11 +50,16 @@ my %FallbackPrereqs = (
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
   "File::Temp" => 0,
+  "Mojolicious::Lite" => "5.0",
   "Path::Tiny" => 0,
-  "Stenciller" => "0.1212",
+  "Stenciller" => "0.1300",
+  "String::Cushion" => 0,
+  "Syntax::Feature::Qi" => 0,
   "Test::DZil" => 0,
   "Test::Differences" => 0,
-  "Test::More" => "0.96"
+  "Test::Mojo::Trim" => 0,
+  "Test::More" => "0.96",
+  "syntax" => 0
 );
 
 

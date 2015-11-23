@@ -12,15 +12,20 @@ header:
 prereqs:
   runtime:
     requires:
-      - perl: 5.016000
-      - Stenciller: 0.1212
+      - perl: 5.014000
+      - Stenciller: 0.1300
       - Dist::Zilla::File::InMemory
+      - Path::Tiny
   test:
     requires:
      - Test::DZil
      - Test::Differences
-     - Path::Tiny
+     - Test::Mojo::Trim
      - File::Temp
+     - syntax
+     - Syntax::Feature::Qi
+     - String::Cushion
+     - Mojolicious::Lite: 5.0
 
 plugins:
   - +config: Author::CSSON
@@ -32,7 +37,7 @@ plugins:
 
   - +add_plugin: TravisYML
     +before: Git::Tag
-    perl_version: 5.16 5.20
+    perl_version: 5.14 5.16 5.20
 
 ---
 doctype: weaver
