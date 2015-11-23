@@ -16,6 +16,7 @@ prereqs:
       - Stenciller: 0.1300
       - Dist::Zilla::File::InMemory
       - Path::Tiny
+      - Stenciller::Plugin::ToMojoliciousTest
   test:
     requires:
      - Test::DZil

@@ -4,7 +4,7 @@
       "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.031, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "Dist::Zilla version 5.041, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -15,14 +15,14 @@
    "name" : "Dist-Zilla-Plugin-Stenciller-MojoliciousTests",
    "no_index" : {
       "directory" : [
-         "t",
-         "xt",
-         "inc",
-         "share",
+         "corpus",
          "eg",
          "examples",
-         "corpus",
-         "t/corpus"
+         "inc",
+         "share",
+         "t",
+         "t/corpus",
+         "xt"
       ]
    },
    "prereqs" : {
@@ -95,6 +95,7 @@
             "Dist::Zilla::File::InMemory" : "0",
             "Path::Tiny" : "0",
             "Stenciller" : "0.1300",
+            "Stenciller::Plugin::ToMojoliciousTest" : "0",
             "perl" : "5.014000"
          }
       },
