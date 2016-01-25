@@ -1,4 +1,4 @@
-use strict;
+use 5.14.0;
 use warnings;
 
 package Dist::Zilla::Plugin::Stenciller::MojoliciousTests {
@@ -12,6 +12,7 @@ package Dist::Zilla::Plugin::Stenciller::MojoliciousTests {
     use Types::Stenciller -types;
     use Path::Tiny;
     use Dist::Zilla::File::InMemory;
+    use namespace::autoclean;
 
     has source_directory => (
         is => 'ro',
@@ -72,6 +73,8 @@ package Dist::Zilla::Plugin::Stenciller::MojoliciousTests {
 
         }
     }
+
+    __PACKAGE__->meta->make_immutable;
 
 }
 
