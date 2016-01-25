@@ -9,18 +9,21 @@ Revision history for Dist-Zilla-Plugin-Stenciller-MojoliciousTests
 
  [Enhancements]
 
- [Other Changes]
-  - Rebuilt with current Dist::Iller::Config::Author::CSSON
-
  [New Features]
 
- [Requirements]
-  - Added missing prereq: Moose
-  - New prereq: namespace::autoclean
+ [Other Changes]
 
- [Revision]
+ [Requirements]
 
  [Testing]
+
+0.0101 2016-01-25T21:42:53Z UTC
+ [Other Changes]
+ - Rebuilt with current Dist::Iller::Config::Author::CSSON
+
+ [Requirements]
+ - Added missing prereq: Moose
+ - New prereq: namespace::autoclean
 
 0.0100 2015-11-23T09:48:00Z UTC
  - Initial release
