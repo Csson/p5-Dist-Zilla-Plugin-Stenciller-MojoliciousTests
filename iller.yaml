@@ -25,6 +25,9 @@ prereqs:
      - Syntax::Feature::Qi
      - String::Cushion
      - Mojolicious: 5.00
+  develop:
+    requires:
+      - Test::NoTabs
 
 plugins:
   - +config: Author::CSSON
@@ -34,9 +37,9 @@ plugins:
       - corpus
       - t/corpus
 
-  - +extend_plugin: TravisYML
-    pre_install:
-     - cpanm Test::NoTabs -v
+ # - +extend_plugin: TravisYML
+ #   pre_install:
+ #    - cpanm Test::NoTabs -v
 
 ---
 doctype: weaver
