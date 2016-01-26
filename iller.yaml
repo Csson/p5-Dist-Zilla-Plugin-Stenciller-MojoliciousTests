@@ -34,6 +34,10 @@ plugins:
       - corpus
       - t/corpus
 
+  - +extend_plugin: TravisYML
+    pre_install:
+     - cpanm Test::NoTabs -v
+
 ---
 doctype: weaver
 
