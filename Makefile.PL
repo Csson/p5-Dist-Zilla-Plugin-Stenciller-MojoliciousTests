@@ -18,6 +18,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Dist::Zilla::Plugin::Stenciller::MojoliciousTests",
   "PREREQ_PM" => {
     "Dist::Zilla::File::InMemory" => 0,
+    "Dist::Zilla::Role::FileGatherer" => 0,
     "Moose" => "2.1400",
     "Path::Tiny" => 0,
     "Stenciller" => "0.1300",
@@ -39,7 +40,7 @@ my %WriteMakefileArgs = (
     "Test::More" => "0.96",
     "syntax" => 0
   },
-  "VERSION" => "0.0101",
+  "VERSION" => "0.0102",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -48,6 +49,7 @@ my %WriteMakefileArgs = (
 
 my %FallbackPrereqs = (
   "Dist::Zilla::File::InMemory" => 0,
+  "Dist::Zilla::Role::FileGatherer" => 0,
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
   "File::Temp" => 0,

@@ -12,6 +12,7 @@ prereqs:
       - namespace::autoclean: 0.22
       - Stenciller: 0.1300
       - Dist::Zilla::File::InMemory
+      - Dist::Zilla::Role::FileGatherer
       - Path::Tiny
       - Stenciller::Plugin::ToMojoliciousTest
   test:

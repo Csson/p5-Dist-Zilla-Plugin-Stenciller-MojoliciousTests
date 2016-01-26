@@ -6,7 +6,7 @@ Dist::Zilla::Plugin::Stenciller::MojoliciousTests - Create Mojolicious tests fro
 
 # VERSION
 
-Version 0.0101, released 2016-01-25.
+Version 0.0102, released 2016-01-26.
 
 # SYNOPSIS
 
