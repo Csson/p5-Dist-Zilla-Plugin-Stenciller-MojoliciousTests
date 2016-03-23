@@ -7,10 +7,10 @@ header:
 prereqs:
   runtime:
     requires:
-      - perl: 5.014000
-      - Moose: 2.1400
-      - namespace::autoclean: 0.22
-      - Stenciller: 0.1300
+      - perl: 5.010000
+      - Moose
+      - namespace::autoclean
+      - Stenciller: 0.1400
       - Dist::Zilla::File::InMemory
       - Dist::Zilla::Role::FileGatherer
       - Path::Tiny
@@ -36,10 +36,6 @@ plugins:
     directory:
       - corpus
       - t/corpus
-
- # - +extend_plugin: TravisYML
- #   pre_install:
- #    - cpanm Test::NoTabs -v
 
 ---
 doctype: weaver
