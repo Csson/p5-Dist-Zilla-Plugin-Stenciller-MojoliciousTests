@@ -11,10 +11,12 @@ prereqs:
       - Moose
       - namespace::autoclean
       - Stenciller: 0.1400
+      - Types::Standard
+      - Types::Path::Tiny
       - Dist::Zilla::File::InMemory
       - Dist::Zilla::Role::FileGatherer
       - Path::Tiny
-      - Stenciller::Plugin::ToMojoliciousTest
+      - Stenciller::Plugin::ToMojoliciousTest: 0.0102
   test:
     requires:
      - Test::DZil

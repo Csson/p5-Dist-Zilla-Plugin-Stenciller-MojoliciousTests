@@ -22,7 +22,9 @@ my %WriteMakefileArgs = (
     "Moose" => "2.1405",
     "Path::Tiny" => "0.072",
     "Stenciller" => "0.1400",
-    "Stenciller::Plugin::ToMojoliciousTest" => 0,
+    "Stenciller::Plugin::ToMojoliciousTest" => "0.0102",
+    "Types::Path::Tiny" => "0.005",
+    "Types::Standard" => "1.000005",
     "namespace::autoclean" => "0.22"
   },
   "TEST_REQUIRES" => {
@@ -59,13 +61,15 @@ my %FallbackPrereqs = (
   "Moose" => "2.1405",
   "Path::Tiny" => "0.072",
   "Stenciller" => "0.1400",
-  "Stenciller::Plugin::ToMojoliciousTest" => 0,
+  "Stenciller::Plugin::ToMojoliciousTest" => "0.0102",
   "String::Cushion" => 0,
   "Syntax::Feature::Qi" => 0,
   "Test::DZil" => 0,
   "Test::Differences" => 0,
   "Test::Mojo::Trim" => 0,
   "Test::More" => "0.96",
+  "Types::Path::Tiny" => "0.005",
+  "Types::Standard" => "1.000005",
   "namespace::autoclean" => "0.22",
   "syntax" => 0
 );
