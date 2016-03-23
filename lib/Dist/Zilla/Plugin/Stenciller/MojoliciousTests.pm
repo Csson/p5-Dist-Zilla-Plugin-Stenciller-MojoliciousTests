@@ -5,7 +5,7 @@ package Dist::Zilla::Plugin::Stenciller::MojoliciousTests;
 
 # ABSTRACT: Create Mojolicious tests from text files parsed with Stenciller
 # AUTHORITY
-our $VERSION = '0.0200';
+our $VERSION = '0.0201';
 
 use Moose;
 with 'Dist::Zilla::Role::FileGatherer';
