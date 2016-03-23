@@ -4,6 +4,7 @@ Revision history for Dist-Zilla-Plugin-Stenciller-MojoliciousTests
  [API Changes]
 
  [Bug Fixes]
+  - Fix compatibility with latest Stenciller (0.1400) (fixes #1).
 
  [Documentation]
 
@@ -15,6 +16,7 @@ Revision history for Dist-Zilla-Plugin-Stenciller-MojoliciousTests
 
  [Requirements]
   - Added missing prereq: Dist::Zilla::Role::FileGatherer
+  - Perl requirement lowered to 5.10 (from 5.14).
 
  [Testing]
 

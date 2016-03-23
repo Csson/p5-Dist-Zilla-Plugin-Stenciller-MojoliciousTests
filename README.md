@@ -2,11 +2,19 @@
 
 Dist::Zilla::Plugin::Stenciller::MojoliciousTests - Create Mojolicious tests from text files parsed with Stenciller
 
-![Requires Perl 5.14+](https://img.shields.io/badge/perl-5.14+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests.svg?branch=master)](https://travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests) ![coverage 97.7%](https://img.shields.io/badge/coverage-97.7%-yellow.svg)
+<div>
+    <p>
+    <img src="https://img.shields.io/badge/perl-5.10+-blue.svg" alt="Requires Perl 5.10+" />
+    <a href="https://travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests"><img src="https://api.travis-ci.org/Csson/p5-Dist-Zilla-Plugin-Stenciller-MojoliciousTests.svg?branch=master" alt="Travis status" /></a>
+    <a href="http://cpants.cpanauthors.org/dist/Dist-Zilla-Plugin-Stenciller-MojoliciousTests-0.0200"><img src="https://badgedepot.code301.com/badge/kwalitee/Dist-Zilla-Plugin-Stenciller-MojoliciousTests/0.0200" alt="Distribution kwalitee" /></a>
+    <a href="http://matrix.cpantesters.org/?dist=Dist-Zilla-Plugin-Stenciller-MojoliciousTests%200.0200"><img src="https://badgedepot.code301.com/badge/cpantesters/Dist-Zilla-Plugin-Stenciller-MojoliciousTests/0.0200" alt="CPAN Testers result" /></a>
+    <img src="https://img.shields.io/badge/coverage-98.1%-yellow.svg" alt="coverage 98.1%" />
+    </p>
+</div>
 
 # VERSION
 
-Version 0.0102, released 2016-01-26.
+Version 0.0200, released 2016-03-23.
 
 # SYNOPSIS
 

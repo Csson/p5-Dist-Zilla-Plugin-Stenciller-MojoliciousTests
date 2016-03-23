@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.014000;
+use 5.010000;
 
 use ExtUtils::MakeMaker;
 
@@ -14,14 +14,14 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Dist-Zilla-Plugin-Stenciller-MojoliciousTests",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.014000",
+  "MIN_PERL_VERSION" => "5.010000",
   "NAME" => "Dist::Zilla::Plugin::Stenciller::MojoliciousTests",
   "PREREQ_PM" => {
     "Dist::Zilla::File::InMemory" => 0,
     "Dist::Zilla::Role::FileGatherer" => 0,
-    "Moose" => "2.1400",
-    "Path::Tiny" => 0,
-    "Stenciller" => "0.1300",
+    "Moose" => "2.1405",
+    "Path::Tiny" => "0.072",
+    "Stenciller" => "0.1400",
     "Stenciller::Plugin::ToMojoliciousTest" => 0,
     "namespace::autoclean" => "0.22"
   },
@@ -40,7 +40,7 @@ my %WriteMakefileArgs = (
     "Test::More" => "0.96",
     "syntax" => 0
   },
-  "VERSION" => "0.0102",
+  "VERSION" => "0.0200",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -56,9 +56,9 @@ my %FallbackPrereqs = (
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
   "Mojolicious" => "5.00",
-  "Moose" => "2.1400",
-  "Path::Tiny" => 0,
-  "Stenciller" => "0.1300",
+  "Moose" => "2.1405",
+  "Path::Tiny" => "0.072",
+  "Stenciller" => "0.1400",
   "Stenciller::Plugin::ToMojoliciousTest" => 0,
   "String::Cushion" => 0,
   "Syntax::Feature::Qi" => 0,
